@@ -1,6 +1,7 @@
 import { useSearchParams } from 'react-router-dom';
 import { useTnxDetails } from '../hooks/use-tnx-details';
 
+
 function TnxDetails() {
 
     const [searchParams] = useSearchParams();
@@ -22,6 +23,7 @@ function TnxDetails() {
             <p>ID: {tnxDetails.id}</p>
             <p>Status: {tnxDetails?.status}</p>
             <p>Amount: {tnxDetails?.amount}</p>
+
         </div>
     );
 }
